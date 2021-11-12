@@ -1,0 +1,17 @@
+name: "Setup and deploy a nodejs site to Azure App service"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  stack-initialization:
+    runs-on: ubuntu-latest
+    environment:
+     name: development
+     url: 'https://node-stack.azurewebsites.net'
+    steps:
+      - run: echo "Creating and deploying a nodejs site to azure app service"       
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
