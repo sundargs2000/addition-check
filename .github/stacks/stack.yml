@@ -1,7 +1,7 @@
 name: sundar addition check
 description: test some stuff
 
-ithub-apps:
+github-apps:
 - slug: azure
 - slug: codetree
 - slug: greenkeeper
