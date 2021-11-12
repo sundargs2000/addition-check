@@ -1,0 +1,15 @@
+name: sundar addition check
+description: test some stuff
+
+ithub-apps:
+- slug: azure
+- slug: codetree
+- slug: greenkeeper
+
+
+#-------------------------------------------------------------
+# Initialization workflow to run
+# This workflow file will NOT be part of the stack (new repo created). 
+# workflow could use the stack inputs using the notation : ${{ github.event.inputs.name }}
+init:
+ uses: "setup.yml"
