@@ -2,6 +2,6 @@ name: sundar addition check
 description: test some stuff
 
 github-apps:
-- slug: backhub
+- slug: backhub-what
 init:
  uses: "setup.yml"
