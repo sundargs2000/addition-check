@@ -1,8 +1,5 @@
 name: sundar addition check
 description: test some stuff
 
-github-apps:
-- slug: azure
-
 init:
  uses: "setup.yml"
