@@ -1,7 +1,7 @@
 name: "Setup and deploy a nodejs site to Azure App service"
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   stack-initialization:
