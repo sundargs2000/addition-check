@@ -3,5 +3,6 @@ description: test some stuff
 
 github-apps:
 - slug: backhub
+- slug: backhub-wrong
 init:
  uses: "setup.yml"
