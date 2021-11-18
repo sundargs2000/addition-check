@@ -5,4 +5,4 @@ github-apps:
 - slug: backhub
 
 init:
- uses: "setup1.yml"
+ uses: "setup.yml"
