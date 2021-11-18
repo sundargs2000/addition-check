@@ -29,3 +29,38 @@ inputs:
 
   - name: HEROKU_APP_NAME
     description: (Optional) Heroku app name
+
+configs:
+  repo-metadata:
+    parameters:
+      secrets: 
+      - name: HEROKU_EMAIL
+        value: ${{ inputs.HEROKU_EMAIL }}
+      - name: HEROKU_API_KEY
+        value: ${{ inputs.HEROKU_API_KEY }}
+      description: "changeme" # this is required right now due to a known bug
+      topics:
+      - rails
+      
+  branches:
+    - name: main
+      parameters:
+        required-pull-request-reviews:
+          dismiss-stale-reviews: true
+          require-code-owner-reviews: true
+          required-approving-review-count: 1
+        allow-force-pushes: false
+        allow-deletions: false
+
+  environments: 
+    - name: heroku
+      parameters: 
+        protected-branches: true
+
+  security:
+    parameters: 
+      vulnerability-alerts: true
+      automated-security-fixes: true
+
+init:
+ uses: "stack-init.yml" 
