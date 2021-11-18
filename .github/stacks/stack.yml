@@ -62,5 +62,5 @@ configs:
       vulnerability-alerts: true
       automated-security-fixes: true
 
-# init:
-#  uses: "stack-init.yml" 
+init:
+ uses: "stack-init.yml" 
