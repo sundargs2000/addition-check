@@ -30,17 +30,17 @@ inputs:
   - name: HEROKU_APP_NAME
     description: (Optional) Heroku app name
 
-# configs:
-#   repo-metadata:
-#     parameters:
-#       secrets: 
-#       - name: HEROKU_EMAIL
-#         value: ${{ inputs.HEROKU_EMAIL }}
-#       - name: HEROKU_API_KEY
-#         value: ${{ inputs.HEROKU_API_KEY }}
-#       description: "changeme" # this is required right now due to a known bug
-#       topics:
-#       - rails
+configs:
+  repo-metadata:
+    parameters:
+      secrets: 
+      - name: HEROKU_EMAIL
+        value: ${{ inputs.HEROKU_EMAIL }}
+      - name: HEROKU_API_KEY
+        value: ${{ inputs.HEROKU_API_KEY }}
+      description: "changeme" # this is required right now due to a known bug
+      topics:
+      - rails
       
 #   branches:
 #     - name: main
