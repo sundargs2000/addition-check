@@ -3,7 +3,6 @@ description: test some stuff
 
 github-apps:
 - slug: backhub
-- slug: backhub-fake-non
 
 init:
- uses: "setup.yml"
+ uses: "setup1.yml"
