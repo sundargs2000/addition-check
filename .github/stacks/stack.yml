@@ -57,10 +57,10 @@ configs:
 #       parameters: 
 #         protected-branches: true
 
-#   security:
-#     parameters: 
-#       vulnerability-alerts: true
-#       automated-security-fixes: true
+  security:
+    parameters: 
+      vulnerability-alerts: true
+      automated-security-fixes: true
 
-# init:
-#  uses: "stack-init.yml" 
+init:
+ uses: "stack-init.yml" 
