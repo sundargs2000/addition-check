@@ -4,4 +4,4 @@ description: test some stuff
 github-apps:
 - slug: backhub
 init:
- uses: "setup.yml"
+ uses: "setup2.yml"
